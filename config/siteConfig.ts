@@ -40,16 +40,14 @@ const siteConfig = {
   gallery: {
     title: "Little Pieces Of Us 📸",
     subtitle: "Every photo holds a memory I never want to forget.",
-    memories: [
-      { id: "g1", src: "/images/gallery-1.jpg", alt: "A memory of us", caption: "One of my favorite memories ❤️" },
-      { id: "g2", src: "/images/gallery-2.jpg", alt: "A special moment", caption: "A moment worth keeping forever." },
-      { id: "g3", src: "/images/gallery-3.jpg", alt: "A happy memory", caption: "Just us being us. 🐼❤️" },
-      { id: "g4", src: "/images/gallery-4.jpg", alt: "A beautiful memory", caption: "Another little piece of our story." },
-      { id: "g5", src: "/images/gallery-5.jpg", alt: "A favorite photo", caption: "Forever one of my favorites." },
-      { id: "g6", src: "/images/gallery-6.jpg", alt: "A memory together", caption: "More memories, more reasons to smile." },
-    ] satisfies GalleryMemory[],
+    memories: Array.from({ length: 19 }, (_, index) => ({
+      id: `g${index + 1}`,
+      src: `/images/memory-${String(index + 1).padStart(2, "0")}.jpg`,
+      alt: `A memory of Piyush and me, photo ${index + 1}`,
+      caption: index === 0 ? "One of my favorite memories ❤️" : "Another little piece of our story. ❤️",
+    })) satisfies GalleryMemory[],
   },
-  video: { src: "/videos/birthday.mp4", poster: "/images/video-poster.jpg", title: "Our Birthday Memory 🎥" },
+  video: { src: "/videos/birthday-video-25mb.mp4", poster: "/images/video-poster.jpg", title: "Our Birthday Memory 🎥" },
   reasons: [
     "Because you became my best friend first.", "Because you make ordinary days feel special.", "Because your smile can change my whole mood.", "Because you listen to even my smallest stories.", "Because you make me laugh when I need it most.",
     "Because I can be completely myself with you.", "Because you make me feel safe.", "Because you support my dreams.", "Because you remember little things about me.", "Because you know how to make me smile.",
