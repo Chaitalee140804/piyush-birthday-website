@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import siteConfig from "@/config/siteConfig";
 
 type HeroProps = { onContinue: () => void };
+
+type PetalStyle = CSSProperties & { "--i": number };
 
 export function Hero({ onContinue }: HeroProps) {
   return (
@@ -11,7 +14,9 @@ export function Hero({ onContinue }: HeroProps) {
       <div aria-hidden="true" className="hero-orb hero-orb-one" />
       <div aria-hidden="true" className="hero-orb hero-orb-two" />
       <div aria-hidden="true" className="hero-petals">
-        {Array.from({ length: 14 }, (_, index) => <span key={index} style={{ "--i": index } as React.CSSProperties}>🌸</span>)}
+        {Array.from({ length: 14 }, (_, index) => (
+          <span key={index} style={{ "--i": index } as PetalStyle}>🌸</span>
+        ))}
       </div>
 
       <div className="relative grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
