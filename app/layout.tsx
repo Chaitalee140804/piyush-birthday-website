@@ -1,19 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Navigation from "@/components/navigation/Navigation";
 
 export const metadata: Metadata = {
   title: "Happy Birthday, Piyush ❤️",
-  description: "A little birthday journey made with all my love for Piyush.",
-  keywords: ["birthday", "Piyush", "love story", "birthday website"],
+  description: "A romantic, anime-inspired birthday journey made with love for Piyush.",
+  keywords: ["birthday", "Piyush", "love story", "birthday website", "romantic website"],
   openGraph: {
     title: "Happy Birthday, Piyush ❤️",
-    description: "A birthday story made with love.",
+    description: "A little birthday story made with love.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Happy Birthday, Piyush ❤️",
-    description: "A birthday story made with love.",
+    description: "A little birthday story made with love.",
   },
 };
 
@@ -28,7 +29,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
