@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "./gallery.css";
 import "./cake.css";
+import "./finale.css";
 import Navigation from "@/components/navigation/Navigation";
 
 export const metadata: Metadata = {
@@ -26,9 +27,7 @@ export const viewport: Viewport = {
   themeColor: "#160b1f",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
