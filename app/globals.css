@@ -29,12 +29,55 @@ button { font: inherit; }
     linear-gradient(180deg, #160b1f 0%, #1c1028 50%, #120817 100%);
 }
 
-.glass-card {
+.glass-card,
+.nav-glass,
+.nav-mobile-menu {
   border: 1px solid var(--glass-border);
   background: var(--glass);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
+
+.nav-glass {
+  box-shadow: 0 12px 45px rgba(0,0,0,.22);
+}
+
+.nav-link {
+  border-radius: 999px;
+  padding: .55rem .75rem;
+  color: rgba(255,255,255,.62);
+  font-size: .82rem;
+  transition: color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(246,168,200,.10);
+  transform: translateY(-1px);
+}
+
+.nav-menu-button {
+  display: grid;
+  place-items: center;
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
+
+.nav-mobile-menu { box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.nav-mobile-link {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  padding: .8rem 1rem;
+  text-align: left;
+  color: rgba(255,255,255,.72);
+}
+.nav-mobile-link:hover { background: rgba(246,168,200,.10); color: white; }
+
+.glass-card { box-shadow: 0 20px 70px rgba(0,0,0,.12); }
 
 .text-gradient {
   background: linear-gradient(90deg, #fff4ed, #f6a8c8, #c9b5f5);
@@ -73,7 +116,10 @@ button { font: inherit; }
 .btn-primary:hover,
 .btn-secondary:hover { transform: translateY(-2px); }
 .btn-primary:focus-visible,
-.btn-secondary:focus-visible { outline: 2px solid #ffd2e4; outline-offset: 3px; }
+.btn-secondary:focus-visible,
+.nav-link:focus-visible,
+.nav-menu-button:focus-visible,
+.nav-mobile-link:focus-visible { outline: 2px solid #ffd2e4; outline-offset: 3px; }
 
 .image-frame { border: 1px solid rgba(255,255,255,.12); box-shadow: 0 20px 70px rgba(0,0,0,.25); }
 
@@ -107,5 +153,5 @@ button { font: inherit; }
 }
 
 @media (max-width: 640px) {
-  .glass-card { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .glass-card, .nav-glass, .nav-mobile-menu { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 }
