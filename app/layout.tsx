@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "./gallery.css";
+import "./cake.css";
 import Navigation from "@/components/navigation/Navigation";
 
 export const metadata: Metadata = {
