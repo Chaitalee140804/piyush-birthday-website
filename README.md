@@ -14,3 +14,5 @@ npm run build
 ```
 
 The repository is ready for local development with `npm run dev`.
+
+<!-- CI trigger: production verification -->
