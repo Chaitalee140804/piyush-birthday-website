@@ -1,0 +1,14 @@
+/* Birthday Cake cinematic layer */
+#birthday-cake{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 48%,rgba(246,168,200,.16),transparent 20%),radial-gradient(circle at 20% 75%,rgba(201,181,245,.08),transparent 28%),linear-gradient(180deg,rgba(18,8,24,.25),rgba(31,12,35,.65))}
+#birthday-cake:before{content:"";position:absolute;inset:12% 18%;border:1px solid rgba(246,168,200,.08);border-radius:50%;box-shadow:0 0 100px rgba(246,168,200,.08),inset 0 0 100px rgba(201,181,245,.05);pointer-events:none}
+#birthday-cake .glass-card{position:relative;overflow:hidden;border-color:rgba(246,168,200,.18);background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.035));box-shadow:0 30px 100px rgba(0,0,0,.35)}
+#birthday-cake .glass-card:before{content:"✦  ✧  ✦  ✧  ✦";position:absolute;left:50%;top:1.4rem;transform:translateX(-50%);white-space:nowrap;color:rgba(255,220,237,.3);font-size:.75rem;letter-spacing:.8rem}
+#birthday-cake .glass-card:after{content:"";position:absolute;inset:auto 8% 7%;height:90px;border-radius:50%;background:radial-gradient(ellipse,rgba(246,168,200,.15),transparent 68%);filter:blur(12px);pointer-events:none}
+#birthday-cake .animate-float{position:relative;z-index:2;filter:drop-shadow(0 18px 28px rgba(246,168,200,.18));transform-origin:center bottom}
+#birthday-cake [aria-label$="birthday candles"]{position:relative;z-index:3}
+#birthday-cake [aria-label$="birthday candles"] span{display:inline-block;filter:drop-shadow(0 0 9px rgba(255,191,91,.55));transform-origin:center bottom}
+#birthday-cake [aria-label$="birthday candles"] span.opacity-20{filter:grayscale(.7);opacity:.18}
+#birthday-cake .btn-primary{position:relative;z-index:5;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 14px 45px rgba(246,168,200,.2)}
+#birthday-cake [role="status"]{position:relative;z-index:4}
+#birthday-cake [role="status"]:before{content:"♡  ✨  ♡  ✨  ♡";display:block;margin-bottom:1rem;color:rgba(246,168,200,.55);letter-spacing:.8rem;animation:sparkle 2.2s ease-in-out infinite}
+@media(max-width:700px){#birthday-cake:before{inset:15% -30%}.cake-mobile-spacing{padding-left:1rem;padding-right:1rem}}
