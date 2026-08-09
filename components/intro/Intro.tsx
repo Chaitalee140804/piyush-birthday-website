@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { CSSProperties } from "react";
 import siteConfig from "@/config/siteConfig";
 
 type IntroProps = { onContinue: () => void };
+
+type IndexedStyle = CSSProperties & { "--i": number };
 
 export function Intro({ onContinue }: IntroProps) {
   const [ready, setReady] = useState(false);
@@ -27,10 +30,14 @@ export function Intro({ onContinue }: IntroProps) {
     >
       <div aria-hidden="true" className="intro-moon" />
       <div aria-hidden="true" className="intro-stars">
-        {Array.from({ length: 34 }, (_, index) => <span key={index} style={{ "--i": index } as React.CSSProperties}>✦</span>)}
+        {Array.from({ length: 34 }, (_, index) => (
+          <span key={index} style={{ "--i": index } as IndexedStyle}>✦</span>
+        ))}
       </div>
       <div aria-hidden="true" className="intro-petals">
-        {Array.from({ length: 18 }, (_, index) => <span key={index} style={{ "--i": index } as React.CSSProperties}>🌸</span>)}
+        {Array.from({ length: 18 }, (_, index) => (
+          <span key={index} style={{ "--i": index } as IndexedStyle}>🌸</span>
+        ))}
       </div>
 
       <div className="relative z-10 max-w-3xl">
