@@ -1,0 +1,10 @@
+{
+  "name": "Happy Birthday, Piyush ❤️",
+  "short_name": "Piyush Birthday",
+  "description": "A romantic birthday journey made with love.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#160b1f",
+  "theme_color": "#160b1f",
+  "lang": "en"
+}

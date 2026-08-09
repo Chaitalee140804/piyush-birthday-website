@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Happy Birthday, Piyush ❤️",
   description: "A little birthday journey made with all my love for Piyush.",
   keywords: ["birthday", "Piyush", "love story", "birthday website"],
+  manifest: "/manifest.webmanifest",
   openGraph: {
     title: "Happy Birthday, Piyush ❤️",
     description: "A birthday story made with love.",

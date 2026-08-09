@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, rebuild-from-scratch]
   pull_request:
-    branches: [main]
+    branches: [main, rebuild-from-scratch]
 
 jobs:
   build:
@@ -14,7 +14,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
       - run: npm install
       - run: npm run typecheck
       - run: npm run lint
