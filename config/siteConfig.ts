@@ -17,12 +17,17 @@ const siteConfig = {
   loveLetter: {
     title: "A Letter From My Heart 💌",
     paragraphs: [
-      "Piyush, if I could put every memory, every smile, every little conversation and every feeling I have for you into words, I still don't think the words would be enough.",
-      "You became my safe place, my favorite person and the one I want beside me through all the ordinary and extraordinary moments of life.",
-      "Thank you for being my best friend, for understanding me, for making me laugh and for filling my days with a kind of happiness I never want to take for granted.",
-      "Happy birthday to the person who means more to me than I can ever properly explain. I hope this year brings you every beautiful thing you deserve.",
+      "💌 Dear Piyush, 🐼❤️",
+      "🎂 Today is one of my favorite days... ✨",
+      "Because today, the world was blessed with someone as amazing, kind, and wonderful as you. 🌎💖",
+      "🌸 You make every little moment special just by being you. Whether we're laughing, talking, or simply spending time together, every memory with you becomes one I'll always treasure. 🥹💕",
+      "🌟 Thank you for being in my life, for making me smile, supporting me, and filling my heart with so much happiness. I truly feel so lucky to have you. ❤️🫂",
+      "🎉 Happy Birthday, my love! 🥳🎈 I hope this year brings you endless happiness, success, good health, and all the dreams you've been wishing for. 🌠🎁",
+      "No matter where life takes us, you'll always have a very special place in my heart. 💞",
+      "With all my love, forever and always... ❤️🐼",
+      "✨ Panda 🐼💌",
     ],
-    signature: "Forever yours ❤️",
+    signature: "✨ Panda 🐼💌",
   },
   gift: {
     title: "A Little Surprise For You 🎁",
